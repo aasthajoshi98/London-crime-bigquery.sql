@@ -2,7 +2,7 @@
 # London-crime-bigquery.sql
 SQL Queries exploring London crime dataset on Google BigQuery public datase
 
-## Q1. Number of distinct boroughs.
+### Q1. Number of distinct boroughs.
 
 ``` sql
 SELECT
@@ -12,7 +12,7 @@ FROM
 ```
 ![image](https://user-images.githubusercontent.com/87647832/131226958-ea986e17-4070-4cb8-820d-e0b395ae0227.png)
 
-## Q2. What are the number of codes per borough?
+### Q2. What are the number of codes per borough?
 
 ```sql
 SELECT
@@ -27,7 +27,7 @@ ORDER BY
 ```
 ![image](https://user-images.githubusercontent.com/87647832/131226979-ab841b89-ecd5-41fa-ac07-230c6f34276a.png)
 
-## Q3. What is the total crime in london?
+### Q3. What is the total crime in london?
 
 ```sql
 SELECT
@@ -44,7 +44,7 @@ GROUP BY
 ```
 ![image](https://user-images.githubusercontent.com/87647832/131226993-ee1d31a5-55b7-4cb6-a73d-3967216817e0.png)
 
-## Q4. What are the total number of crimes under 'Theft and Handling' and 'Violence against the person' per borough in 2016?
+### Q4. What are the total number of crimes under 'Theft and Handling' and 'Violence against the person' per borough in 2016?
 ```sql
 SELECT
   b1 AS Borough,
@@ -77,7 +77,7 @@ FROM ((
   ```
 ![image](https://user-images.githubusercontent.com/87647832/131227000-e29cd553-a88e-4e58-91b9-2972954091d6.png)
 
-## Q5. What are the total number of crimes under 'Drugs' and 'Robbery' per borough in 2016?
+### Q5. What are the total number of crimes under 'Drugs' and 'Robbery' per borough in 2016?
 ```sql 
 SELECT
   b1 AS Borough,
